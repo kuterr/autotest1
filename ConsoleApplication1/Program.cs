@@ -40,6 +40,7 @@ namespace AutomationTesting
                 }
 
             }
+            //exceptions
             catch (Exception e)
             {
                 if (e is System.IO.DirectoryNotFoundException || e is System.IO.FileNotFoundException)
@@ -77,7 +78,7 @@ namespace AutomationTesting
                 fileName = Console.ReadLine();
                 if (fileName.Length == 0)
                 {
-                    Console.WriteLine("File name is mandatory");
+                    fileName = test.txt;
                 }
             }
 
